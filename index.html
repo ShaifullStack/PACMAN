@@ -1,28 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Pacman</title>
-    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="/css/app.css"></link>
+    <title>Minesweeper</title>
+    <h1>Minesweeper</h1>
 </head>
+<body onload="init()">
 
-<body onload="init()" onkeyup="movePacman(event)">
 
-    <img src="img/pacman.jpg" alt="Pacman logo">
+<div class="lavel-container" >
+    <button>Beginner</button>
+    <button>Intermediate</button>
+    <button> Expert</button>
 
-    <h2 class="score">Score: <span>0</span> </h2>
-    <div class="board-container"></div>
-
-<div class="modal"><span>Game Over</span> 
-    <button onclick="restGame()">Play Again</button>
 </div>
-    <script src="js/utils.js"></script>
-    <script src="js/game.js"></script>
-    <script src="js/pacman.js"></script>
-    <script src="js/ghost.js"></script>
-</body>
 
+<div class="board-container"></div>   
+
+
+
+    
+
+
+
+
+
+
+<script src="/js/minesweeper.js"></script>
+<script src="js/utils.js"></script>
+</body>
 </html>
